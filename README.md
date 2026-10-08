@@ -25,7 +25,7 @@ A tabela abaixo compara **apenas os rádios Semtech**, independentemente das pla
 | Taxa LoRa máxima | até 40 kbps | até 62,5 kbps |
 | Sensibilidade máxima | até -148 dBm | até -148 dBm |
 
-Em resumo, o **SX1262** é uma geração mais nova, com menor consumo em recepção, maior potência de transmissão, suporte a SF5 e LR-FHSS. O **SX1276**, por outro lado, possui uma faixa de frequência total mais ampla e suporte a OOK.
+Em resumo, o **SX1262** é uma geração mais nova, com menor consumo em recepção, maior potência de transmissão, suporte a SF5 e LR-FHSS. O **SX1276**, por outro lado, possui uma faixa de frequência total mais ampla.
 
 > Valores baseados na documentação oficial da Semtech.
 
