@@ -25,5 +25,3 @@ idf.py build
 ```bash
 idf.py -p PORTA flash monitor
 ```
-
-<!-- Adicionar observações de porta, driver e troubleshooting. -->

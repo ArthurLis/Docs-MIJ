@@ -20,8 +20,10 @@ A documentação foi organizada para ser consultada diretamente pelo **GitHub**,
 
 ## Sumário
 
-- [Sobre o repositório](#sobre-o-repositório)
-- [Plataformas](#plataformas)
+- [JVTECH — LoRa e LoRaWAN com ESP-IDF](#jvtech--lora-e-lorawan-com-esp-idf)
+  - [Sobre o repositório](#sobre-o-repositório)
+  - [Sumário](#sumário)
+  - [Plataformas](#plataformas)
 - [Documentação](#documentação)
   - [Informações gerais](#informações-gerais)
   - [Hardware](#hardware)
@@ -29,8 +31,14 @@ A documentação foi organizada para ser consultada diretamente pelo **GitHub**,
   - [Material de apoio](#material-de-apoio)
 - [Exemplos](#exemplos)
   - [MIJ — ESP32 + SX1276](#mij--esp32--sx1276)
-  - [MIJ_X — ESP32-C6 + SX1262](#mij_x--esp32-c6--sx1262)
+    - [LoRa](#lora)
+    - [LoRaWAN](#lorawan)
+  - [MIJ\_X — ESP32-C6 + SX1262](#mij_x--esp32-c6--sx1262)
+    - [LoRa](#lora-1)
+    - [LoRaWAN](#lorawan-1)
 - [Como começar](#como-começar)
+    - [MIJ](#mij)
+    - [MIJ\_X](#mij_x)
 - [Estrutura do repositório](#estrutura-do-repositório)
 - [Perguntas e respostas](#perguntas-e-respostas)
 - [Referências](#referências)
@@ -74,7 +82,6 @@ A documentação foi organizada para ser consultada diretamente pelo **GitHub**,
 
 - [Material de apoio](docs/material-de-apoio/README.md)
 - [LoRa x LoRaWAN](docs/material-de-apoio/lora-vs-lorawan.md)
-- [Polling x Callback](docs/material-de-apoio/polling-vs-callback.md)
 - [ABP x OTAA](docs/material-de-apoio/abp-vs-otaa.md)
 - [Glossário](docs/material-de-apoio/glossario.md)
 
@@ -155,9 +162,6 @@ idf.py set-target esp32c6
 idf.py build
 idf.py flash monitor
 ```
-
-> [!IMPORTANT]
-> Antes de publicar um fork ou cópia deste repositório, confira os arquivos `config.h` dos exemplos LoRaWAN e remova credenciais reais de ABP ou OTAA.
 
 Para mais detalhes, consulte [Compilação e gravação](docs/primeiros-passos/compilacao-e-gravacao.md).
 

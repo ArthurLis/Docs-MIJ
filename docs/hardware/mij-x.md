@@ -8,20 +8,3 @@ Plataforma baseada em ESP32-C6 com rádio SX1262.
 
 Os exemplos usam GPIOs genéricos e devem ser ajustados em `config.h`.
 
-| Sinal | GPIO |
-| --- | --- |
-| SCLK |  |
-| MISO |  |
-| MOSI |  |
-| NSS |  |
-| RST |  |
-| DIO1 |  |
-| BUSY |  |
-
-## TCXO / XTAL
-
-<!-- Explicar a configuração da placa utilizada. -->
-
-## Observações
-
-<!-- Preencher. -->

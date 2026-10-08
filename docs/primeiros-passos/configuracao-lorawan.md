@@ -1,9 +1,5 @@
 # Configuração LoRaWAN
 
-## Região
-
-<!-- Explicar região, sub-band e gateway/network server. -->
-
 ## ABP
 
 Cole as credenciais no `config.h` usando strings HEX.
@@ -22,13 +18,3 @@ constexpr char OTAA_DEV_EUI_HEX[]  = "0000000000000000";
 constexpr char OTAA_APP_KEY_HEX[]  = "00000000000000000000000000000000";
 constexpr char OTAA_NWK_KEY_HEX[]  = "";
 ```
-
-> Não publique chaves reais no repositório.
-
-## ADR e Data Rate
-
-<!-- Preencher. -->
-
-## Persistência
-
-<!-- Explicar NVS, sessão e contadores. -->
