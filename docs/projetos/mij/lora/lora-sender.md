@@ -6,34 +6,42 @@
 
 ## Objetivo
 
-Envia pacotes LoRa de forma simples e bloqueante.
-
-<!-- Expandir o objetivo do exemplo. -->
+Envia pacotes LoRa de forma simples. A função de transmissão aguarda o rádio terminar o envio antes de continuar.
 
 ## Funcionamento
 
-<!-- Explicar o fluxo principal. -->
+O rádio é configurado e, a cada intervalo, o firmware monta uma mensagem com um contador. A chamada de transmissão é bloqueante: o código só segue quando o envio termina ou ocorre erro.
 
 ## Hardware
 
-<!-- Inserir pinagem e ligação. -->
+A ligação padrão usada nestes exemplos é:
+
+| Sinal | GPIO |
+| --- | ---: |
+| SCLK | 18 |
+| MISO | 19 |
+| MOSI | 23 |
+| NSS / CS | 5 |
+| RST | 14 |
+| DIO0 | 26 |
+| DIO1 | 13 |
+
+O DIO2 não é utilizado.
 
 ## Configuração
 
 Arquivo principal: `main/config.h`.
 
-<!-- Destacar apenas os parâmetros relevantes deste exemplo. -->
+Ajuste frequência, bandwidth, spreading factor, coding rate, sync word e potência conforme o teste. Esse mesmo arquivo também contém a pinagem. O componente SX1276 reutiliza essa configuração.
 
 ## Como testar
 
-<!-- Passo a passo do teste. -->
+Use outro dispositivo com `LoRaReceiver` ou `LoRaReceiverCallback`, mantendo os mesmos parâmetros de rádio.
 
 ## Resultado esperado
 
-<!-- Inserir logs, prints ou comportamento esperado. -->
+Devem aparecer mensagens de envio e confirmação de `TxDone`/transmissão concluída.
 
 ## Observações
 
-
-
-<!-- Espaço livre para anotações adicionais. -->
+Sender e Receiver precisam utilizar os mesmos parâmetros de modulação.

@@ -2,16 +2,18 @@
 
 ## LoRa
 
-O LoRa é uma tecnologia sem fio e de baixo consumo, utilizada, principalmente para transmitir pequenas quantidades de dados. Por meio dela, os dispositivos podem se comunicar entre si, sem necessidade de uma infraestura LoRaWAN. O método de comunicação deles se dá pelos parâmetros envolvidos, como frequência, SF etc.
+LoRa é uma tecnologia de comunicação sem fio de longo alcance e baixo consumo. Em uma comunicação LoRa direta, dois rádios podem trocar pacotes sem depender de uma infraestrutura LoRaWAN.
+
+Para que a comunicação funcione, Sender e Receiver precisam utilizar parâmetros compatíveis, como frequência, bandwidth, spreading factor, coding rate e sync word.
 
 ## LoRaWAN
 
-O LoRaWAN é um protocolo de comunicação contruído sobre a tecnologia LoRa. Diferentemente da comunicação direta, esse protocolo possui uma estrutura por trás, composta por mecanismos de autenticação, segurança, controle de canais etc.
+LoRaWAN é um protocolo de rede construído sobre a modulação LoRa. Ele define regras para autenticação, segurança, canais, Data Rate, janelas de recepção e comunicação com uma infraestrutura de rede.
 
-Os dispositos podem ser ativados utilizando métodos como ABP e OTAA.
+Os dispositivos podem ser ativados por métodos como **ABP** ou **OTAA**.
 
 ## Quando usar cada um
 
-LoRa pode ser utilizado quando a aplicação necessita de uma comunicação simples e direta entre dispositivos, sem depender de gateway ou servidor de rede.
+Use LoRa direto quando a aplicação precisa de uma comunicação simples entre rádios e você controla os dois lados do enlace.
 
-LoRaWAN é mais indicado quando existe a necessidade de integrar vários dispositivos a uma infraestrutura.
+Use LoRaWAN quando os dispositivos precisam participar de uma rede com gateway, servidor de rede, gerenciamento de sessões e possibilidade de uplinks e downlinks controlados pelo protocolo.

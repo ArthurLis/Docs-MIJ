@@ -31,7 +31,6 @@ constexpr gpio_num_t LORA_PIN_NSS  = GPIO_NUM_5;
 constexpr gpio_num_t LORA_PIN_RST  = GPIO_NUM_14;
 constexpr gpio_num_t LORA_PIN_DIO0 = GPIO_NUM_26;
 constexpr gpio_num_t LORA_PIN_DIO1 = GPIO_NUM_13;
-constexpr gpio_num_t LORA_PIN_DIO2 = GPIO_NUM_32;
 
 constexpr int LORA_SPI_CLOCK_HZ = 8'000'000;
 constexpr uint32_t LORA_XTAL_HZ = 32'000'000;

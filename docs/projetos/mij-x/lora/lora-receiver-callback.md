@@ -6,34 +6,30 @@
 
 ## Objetivo
 
-Recebe pacotes em modo contínuo usando callback no DIO1.
-
-<!-- Expandir o objetivo do exemplo. -->
+Recebe pacotes LoRa usando uma interrupção/callback para avisar a aplicação quando uma recepção termina.
 
 ## Funcionamento
 
-<!-- Explicar o fluxo principal. -->
+O SX1262 permanece em recepção contínua. O DIO1 dispara o callback quando o pacote termina; a aplicação então lê os dados e registra o resultado.
 
 ## Hardware
 
-<!-- Inserir pinagem e ligação. -->
+Os GPIOs do ESP32-C6 são **genéricos nos exemplos**. Ajuste `SCLK`, `MISO`, `MOSI`, `NSS`, `RST`, `DIO1` e `BUSY` em `main/config.h` para a placa utilizada. Também confira se o módulo usa TCXO ou XTAL.
 
 ## Configuração
 
 Arquivo principal: `main/config.h`.
 
-<!-- Destacar apenas os parâmetros relevantes deste exemplo. -->
+Além dos parâmetros LoRa, ajuste os GPIOs do SX1262. Confira `SX1262_TCXO_VOLTAGE` e a configuração do RF switch conforme o módulo utilizado.
 
 ## Como testar
 
-<!-- Passo a passo do teste. -->
+Grave `LoRaSender` em outro dispositivo e envie pacotes com os mesmos parâmetros LoRa.
 
 ## Resultado esperado
 
-<!-- Inserir logs, prints ou comportamento esperado. -->
+O monitor deve indicar o evento de recepção e exibir o pacote recebido.
 
 ## Observações
 
-
-
-<!-- Espaço livre para anotações adicionais. -->
+Sender e Receiver precisam utilizar os mesmos parâmetros de modulação.

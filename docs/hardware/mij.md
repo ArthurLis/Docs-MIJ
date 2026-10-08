@@ -2,4 +2,21 @@
 
 ## Visão geral
 
-Plataforma baseada em ESP32 com rádio SX1276.
+A MIJ utiliza um **ESP32** conectado ao rádio **SX1276** por SPI.
+
+## Pinagem usada pelos exemplos
+
+| Sinal | GPIO |
+| --- | ---: |
+| SCLK | 18 |
+| MISO | 19 |
+| MOSI | 23 |
+| NSS / CS | 5 |
+| RST | 14 |
+| DIO0 | 26 |
+| DIO1 | 13 |
+
+O **DIO2 não é utilizado** nestes exemplos.
+
+> [!IMPORTANT]
+> Confirme a ligação física da sua placa antes de energizar o rádio.

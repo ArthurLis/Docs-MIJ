@@ -2,12 +2,20 @@
 
 ## ABP
 
-A conexão ABP (Activation by Personalization) é uma conexão com características de funcionamento mais rápido, não depende uma troca de mensagens inicial, além de ser extremamente menos complexa. Porém, sua taxa de segurança, pelos mesmos motivos é muito menor quando comparada com a conexão OTAA, por suas chaves serem permamentes e estáticas.
+**ABP (Activation By Personalization)** utiliza parâmetros de sessão configurados previamente no dispositivo. Por isso, não existe uma troca de Join antes do início dos uplinks.
 
-É ideal para comunicações rápidas, ou conexões de teste.
+É simples para testes e ambientes controlados, mas exige mais cuidado com o gerenciamento das chaves e dos contadores de quadro.
 
 ## OTAA
 
-A conexão OTAA (Over-the-Air Activation) é uma conexão com caraterísticas de funcionamento mais seguros, depende de uma troca de mensagens inicial, conhecido como join, por isso se torna mais complexa. Em compensação, as chaves não são estáticas, além de sempre expirarem, o que diminui o risco de cópia.
+**OTAA (Over-The-Air Activation)** realiza um processo de Join com a rede. Após um Join aceito, o dispositivo passa a utilizar a sessão criada para a comunicação.
 
-É ideal para conexões mais complexas.
+É normalmente a opção preferida para implantações LoRaWAN porque facilita a criação e renovação de sessões sem gravar previamente todas as chaves de sessão no dispositivo.
+
+## Resumo
+
+| ABP | OTAA |
+| --- | --- |
+| Sessão configurada previamente | Sessão criada por Join |
+| Inicialização mais simples | Exige Join com a rede |
+| Útil em testes e cenários controlados | Recomendado para redes gerenciadas |

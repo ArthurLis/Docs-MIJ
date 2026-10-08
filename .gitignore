@@ -1,0 +1,9 @@
+# ESP-IDF generated files
+build/
+managed_components/
+sdkconfig.old
+
+# Editor / OS temporary files
+*.swp
+.DS_Store
+Thumbs.db

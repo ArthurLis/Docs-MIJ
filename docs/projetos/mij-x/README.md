@@ -2,10 +2,11 @@
 
 ## LoRa
 
-Quatro exemplos de comunicação LoRa direta.
+Quatro exemplos de comunicação LoRa direta usando RadioLib e o rádio SX1262.
 
 ## LoRaWAN
 
-Quatro exemplos LoRaWAN Class A com ABP e OTAA.
+Quatro exemplos LoRaWAN Class A, com ABP e OTAA.
 
-<!-- Completar. -->
+> [!IMPORTANT]
+> Os GPIOs da MIJ_X são genéricos nos exemplos e precisam ser ajustados para a placa utilizada.

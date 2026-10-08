@@ -1,5 +1,8 @@
 # LoRa — MIJ_X
 
-Exemplos LoRa para ESP32-C6 + SX1262.
+Exemplos de comunicação LoRa direta para **ESP32-C6 + SX1262**. Os GPIOs são genéricos e devem ser ajustados para o hardware real.
 
-<!-- Inserir introdução. -->
+- LoRaSender
+- LoRaReceiver
+- LoRaReceiverCallback
+- LoRaSenderNonBlockingCallback

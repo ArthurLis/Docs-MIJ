@@ -1,5 +1,5 @@
 # LoRaWAN — MIJ
 
-Exemplos LoRaWAN Class A para ESP32 + SX1276.
+Exemplos **LoRaWAN Class A** para **ESP32 + SX1276**, com ativação ABP e OTAA.
 
-<!-- Inserir introdução. -->
+Os exemplos `Receiver` recebem downlinks somente em RX1/RX2 após um uplink, como definido para Class A.

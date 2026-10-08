@@ -6,34 +6,42 @@
 
 ## Objetivo
 
-Recebe pacotes usando callback associado ao evento de recepção.
-
-<!-- Expandir o objetivo do exemplo. -->
+Recebe pacotes LoRa usando uma interrupção/callback para avisar a aplicação quando uma recepção termina.
 
 ## Funcionamento
 
-<!-- Explicar o fluxo principal. -->
+O SX1276 fica em recepção contínua. O DIO0 sinaliza `RxDone`; a aplicação detecta o evento, lê o pacote e chama a rotina de tratamento. O processamento do pacote acontece fora da interrupção.
 
 ## Hardware
 
-<!-- Inserir pinagem e ligação. -->
+A ligação padrão usada nestes exemplos é:
+
+| Sinal | GPIO |
+| --- | ---: |
+| SCLK | 18 |
+| MISO | 19 |
+| MOSI | 23 |
+| NSS / CS | 5 |
+| RST | 14 |
+| DIO0 | 26 |
+| DIO1 | 13 |
+
+O DIO2 não é utilizado.
 
 ## Configuração
 
 Arquivo principal: `main/config.h`.
 
-<!-- Destacar apenas os parâmetros relevantes deste exemplo. -->
+Ajuste frequência, bandwidth, spreading factor, coding rate, sync word e potência conforme o teste. Esse mesmo arquivo também contém a pinagem. O componente SX1276 reutiliza essa configuração.
 
 ## Como testar
 
-<!-- Passo a passo do teste. -->
+Grave `LoRaSender` em outro dispositivo e envie pacotes com os mesmos parâmetros LoRa.
 
 ## Resultado esperado
 
-<!-- Inserir logs, prints ou comportamento esperado. -->
+O monitor deve indicar o evento de recepção e exibir o pacote recebido.
 
 ## Observações
 
-
-
-<!-- Espaço livre para anotações adicionais. -->
+Sender e Receiver precisam utilizar os mesmos parâmetros de modulação.

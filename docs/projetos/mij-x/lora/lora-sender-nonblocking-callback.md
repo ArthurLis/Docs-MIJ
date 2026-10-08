@@ -6,34 +6,30 @@
 
 ## Objetivo
 
-Inicia a transmissão de forma não bloqueante e trata TxDone por callback.
-
-<!-- Expandir o objetivo do exemplo. -->
+Demonstra transmissão LoRa não bloqueante.
 
 ## Funcionamento
 
-<!-- Explicar o fluxo principal. -->
+A transmissão é iniciada com `startTransmit()`, permitindo que a tarefa principal continue executando. O DIO1 sinaliza `TxDone`; depois o firmware chama `finishTransmit()`.
 
 ## Hardware
 
-<!-- Inserir pinagem e ligação. -->
+Os GPIOs do ESP32-C6 são **genéricos nos exemplos**. Ajuste `SCLK`, `MISO`, `MOSI`, `NSS`, `RST`, `DIO1` e `BUSY` em `main/config.h` para a placa utilizada. Também confira se o módulo usa TCXO ou XTAL.
 
 ## Configuração
 
 Arquivo principal: `main/config.h`.
 
-<!-- Destacar apenas os parâmetros relevantes deste exemplo. -->
+Além dos parâmetros LoRa, ajuste os GPIOs do SX1262. Confira `SX1262_TCXO_VOLTAGE` e a configuração do RF switch conforme o módulo utilizado.
 
 ## Como testar
 
-<!-- Passo a passo do teste. -->
+Use `LoRaReceiver` ou `LoRaReceiverCallback` no outro dispositivo.
 
 ## Resultado esperado
 
-<!-- Inserir logs, prints ou comportamento esperado. -->
+O log deve mostrar o início do envio e, depois, a confirmação do callback de transmissão concluída.
 
 ## Observações
 
-
-
-<!-- Espaço livre para anotações adicionais. -->
+Sender e Receiver precisam utilizar os mesmos parâmetros de modulação.

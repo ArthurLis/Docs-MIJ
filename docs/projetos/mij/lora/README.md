@@ -1,5 +1,8 @@
 # LoRa — MIJ
 
-Exemplos LoRa para ESP32 + SX1276.
+Exemplos de comunicação LoRa direta para **ESP32 + SX1276**.
 
-<!-- Inserir introdução. -->
+- LoRaSender
+- LoRaReceiver
+- LoRaReceiverCallback
+- LoRaSenderNonBlockingCallback

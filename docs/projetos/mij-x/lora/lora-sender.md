@@ -6,34 +6,30 @@
 
 ## Objetivo
 
-Envia pacotes LoRa de forma simples e bloqueante.
-
-<!-- Expandir o objetivo do exemplo. -->
+Envia pacotes LoRa de forma simples. A função de transmissão aguarda o rádio terminar o envio antes de continuar.
 
 ## Funcionamento
 
-<!-- Explicar o fluxo principal. -->
+O rádio é configurado e, a cada intervalo, o firmware monta uma mensagem com um contador. A chamada de transmissão é bloqueante: o código só segue quando o envio termina ou ocorre erro.
 
 ## Hardware
 
-<!-- Inserir pinagem e ligação. -->
+Os GPIOs do ESP32-C6 são **genéricos nos exemplos**. Ajuste `SCLK`, `MISO`, `MOSI`, `NSS`, `RST`, `DIO1` e `BUSY` em `main/config.h` para a placa utilizada. Também confira se o módulo usa TCXO ou XTAL.
 
 ## Configuração
 
 Arquivo principal: `main/config.h`.
 
-<!-- Destacar apenas os parâmetros relevantes deste exemplo. -->
+Além dos parâmetros LoRa, ajuste os GPIOs do SX1262. Confira `SX1262_TCXO_VOLTAGE` e a configuração do RF switch conforme o módulo utilizado.
 
 ## Como testar
 
-<!-- Passo a passo do teste. -->
+Use outro dispositivo com `LoRaReceiver` ou `LoRaReceiverCallback`, mantendo os mesmos parâmetros de rádio.
 
 ## Resultado esperado
 
-<!-- Inserir logs, prints ou comportamento esperado. -->
+Devem aparecer mensagens de envio e confirmação de `TxDone`/transmissão concluída.
 
 ## Observações
 
-Os GPIOs do SX1262 são exemplos genéricos e devem ser ajustados.
-
-<!-- Espaço livre para anotações adicionais. -->
+Sender e Receiver precisam utilizar os mesmos parâmetros de modulação.

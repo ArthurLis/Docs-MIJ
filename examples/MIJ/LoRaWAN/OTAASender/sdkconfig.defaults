@@ -1,5 +1,5 @@
 # JVTECH LoRaWAN example - ESP-IDF 5.3.1
-# RadioLib native ESP-IDF HAL needs 1 ms FreeRTOS timing for LoRaWAN RX windows.
+# Use a 1 kHz FreeRTOS tick for millisecond-level timing in these LoRaWAN examples.
 CONFIG_FREERTOS_HZ=1000
 
 # LoRaWAN/RadioLib has deep call paths and sizeable protocol objects.

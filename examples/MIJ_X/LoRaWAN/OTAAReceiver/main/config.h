@@ -67,21 +67,17 @@ constexpr uint16_t RADIO_PREAMBLE_LENGTH = 8;
 // OTAA credentials - copy/paste HEX strings.
 // NwkKey empty = LoRaWAN 1.0.x; populated = LoRaWAN 1.1.
 // -----------------------------------------------------------------------------
-constexpr char OTAA_JOIN_EUI_HEX[] = "2413984507c63288";
-constexpr char OTAA_DEV_EUI_HEX[]  = "c92874ba3b476042";
-constexpr char OTAA_APP_KEY_HEX[]  = "1da1e769cefeb68f13456c657fc66893";
+constexpr char OTAA_JOIN_EUI_HEX[] = "0000000000000000";
+constexpr char OTAA_DEV_EUI_HEX[]  = "0000000000000000";
+constexpr char OTAA_APP_KEY_HEX[]  = "00000000000000000000000000000000";
 constexpr char OTAA_NWK_KEY_HEX[]  = "";
 
 // Example behavior.
 constexpr uint8_t UPLINK_FPORT = 10;
-constexpr bool UPLINK_CONFIRMED = false;
-constexpr size_t EXAMPLE_PAYLOAD_SIZE = 32;
-constexpr uint32_t SEND_INTERVAL_MS = 60'000;
 constexpr uint32_t DOWNLINK_POLL_INTERVAL_MS = 30'000;
 constexpr uint32_t OTAA_JOIN_RETRY_MS = 5'000;
 constexpr size_t MAX_DOWNLINK_BYTES = 255;
 
-constexpr const char *ABP_NVS_NAMESPACE = "lw_abp";
 constexpr const char *OTAA_NVS_NAMESPACE = "lw_otaa";
 
 } // namespace appcfg

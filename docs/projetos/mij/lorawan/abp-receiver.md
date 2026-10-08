@@ -6,34 +6,42 @@
 
 ## Objetivo
 
-Envia um uplink vazio para abrir RX1/RX2 e aguarda downlink.
-
-<!-- Expandir o objetivo do exemplo. -->
+Demonstra o recebimento de downlinks em uma sessão ABP.
 
 ## Funcionamento
 
-<!-- Explicar o fluxo principal. -->
+Em Class A o dispositivo não fica ouvindo o tempo todo. Este exemplo envia um uplink vazio apenas para abrir as janelas RX1 e RX2 e verificar se existe um downlink pendente.
 
 ## Hardware
 
-<!-- Inserir pinagem e ligação. -->
+Use a MIJ com ESP32 + SX1276. A pinagem padrão é:
+
+| Sinal | GPIO |
+| --- | ---: |
+| SCLK | 18 |
+| MISO | 19 |
+| MOSI | 23 |
+| NSS / CS | 5 |
+| RST | 14 |
+| DIO0 | 26 |
+| DIO1 | 13 |
+
+O DIO2 não é utilizado.
 
 ## Configuração
 
 Arquivo principal: `main/config.h`.
 
-<!-- Destacar apenas os parâmetros relevantes deste exemplo. -->
+Preencha somente as credenciais do modo deste exemplo e confira `LORAWAN_BAND` e `LORAWAN_SUB_BAND` para que correspondam à rede.
 
 ## Como testar
 
-<!-- Passo a passo do teste. -->
+Cadastre o dispositivo em ABP, preencha as credenciais, coloque um downlink na fila do servidor e execute o exemplo.
 
 ## Resultado esperado
 
-<!-- Inserir logs, prints ou comportamento esperado. -->
+Se houver downlink pendente, o monitor deve informar RX1 ou RX2, FPort, FCnt, RSSI, SNR e o payload em HEX.
 
 ## Observações
 
-
-
-<!-- Espaço livre para anotações adicionais. -->
+As credenciais do repositório ficam zeradas de propósito. Preencha-as somente no ambiente de teste e não publique chaves reais. Em Class A, downlinks só são recebidos nas janelas abertas depois de um uplink. O estado da sessão e os contadores são persistidos em NVS.

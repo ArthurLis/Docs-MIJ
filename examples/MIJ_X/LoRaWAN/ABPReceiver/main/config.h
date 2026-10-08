@@ -68,9 +68,9 @@ constexpr uint16_t RADIO_PREAMBLE_LENGTH = 8;
 // ABP credentials - copy/paste HEX strings.
 // LoRaWAN 1.0.x: DevAddr + NwkSKey + AppSKey.
 // -----------------------------------------------------------------------------
-constexpr char ABP_DEV_ADDR_HEX[] = "01cd9989";
-constexpr char ABP_NWK_S_KEY_HEX[] = "dcda84d6b67aae0e4dac4357581d0208";
-constexpr char ABP_APP_S_KEY_HEX[] = "d3684d497669745db5f00dd19f751275";
+constexpr char ABP_DEV_ADDR_HEX[] = "00000000";
+constexpr char ABP_NWK_S_KEY_HEX[] = "00000000000000000000000000000000";
+constexpr char ABP_APP_S_KEY_HEX[] = "00000000000000000000000000000000";
 
 // Optional ABP LoRaWAN 1.1. Leave ALL THREE empty for 1.0.x.
 constexpr char ABP_F_NWK_S_INT_KEY_HEX[] = "";
@@ -79,14 +79,9 @@ constexpr char ABP_NWK_S_ENC_KEY_HEX[] = "";
 
 // Example behavior.
 constexpr uint8_t UPLINK_FPORT = 10;
-constexpr bool UPLINK_CONFIRMED = false;
-constexpr size_t EXAMPLE_PAYLOAD_SIZE = 32;
-constexpr uint32_t SEND_INTERVAL_MS = 60'000;
 constexpr uint32_t DOWNLINK_POLL_INTERVAL_MS = 30'000;
-constexpr uint32_t OTAA_JOIN_RETRY_MS = 30'000;
 constexpr size_t MAX_DOWNLINK_BYTES = 255;
 
 constexpr const char *ABP_NVS_NAMESPACE = "lw_abp";
-constexpr const char *OTAA_NVS_NAMESPACE = "lw_otaa";
 
 } // namespace appcfg

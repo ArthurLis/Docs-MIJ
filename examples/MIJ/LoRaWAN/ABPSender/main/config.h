@@ -37,7 +37,7 @@ constexpr uint32_t LORA_SPI_CLOCK_HZ = 8'000'000;
 
 // -----------------------------------------------------------------------------
 // LoRaWAN region/channel plan.
-// Base: AU915 sub-band 2. MUST match the network server/gateway channel plan.
+// Default: AU915 sub-band 1. MUST match the network server/gateway channel plan.
 // Other examples: &US915, &EU868, &AS923.
 // -----------------------------------------------------------------------------
 constexpr const LoRaWANBand_t *LORAWAN_BAND = &AU915;
@@ -57,9 +57,9 @@ constexpr uint16_t RADIO_PREAMBLE_LENGTH = 8;
 // ABP credentials - LoRaWAN 1.0.x (simple/default).
 // COPY -> PASTE. Do NOT convert to {0x.., 0x..}.
 // -----------------------------------------------------------------------------
-constexpr char ABP_DEV_ADDR_HEX[] = "01cd9989";
-constexpr char ABP_NWK_S_KEY_HEX[] = "dcda84d6b67aae0e4dac4357581d0208";
-constexpr char ABP_APP_S_KEY_HEX[] = "d3684d497669745db5f00dd19f751275";
+constexpr char ABP_DEV_ADDR_HEX[] = "00000000";
+constexpr char ABP_NWK_S_KEY_HEX[] = "00000000000000000000000000000000";
+constexpr char ABP_APP_S_KEY_HEX[] = "00000000000000000000000000000000";
 
 // Optional ABP LoRaWAN 1.1. Leave ALL THREE empty for 1.0.x.
 constexpr char ABP_F_NWK_S_INT_KEY_HEX[] = "";
@@ -72,12 +72,9 @@ constexpr char ABP_NWK_S_ENC_KEY_HEX[] = "";
 constexpr uint8_t UPLINK_FPORT = 10;
 constexpr bool UPLINK_CONFIRMED = false;
 constexpr uint32_t SEND_INTERVAL_MS = 60'000;
-constexpr uint32_t DOWNLINK_POLL_INTERVAL_MS = 30'000;
-constexpr uint32_t OTAA_JOIN_RETRY_MS = 30'000;
 constexpr size_t MAX_DOWNLINK_BYTES = 255;
 
 // Sender/Receiver of the same activation mode share NVS state intentionally.
 constexpr const char *ABP_NVS_NAMESPACE = "lw_abp";
-constexpr const char *OTAA_NVS_NAMESPACE = "lw_otaa";
 
 } // namespace appcfg

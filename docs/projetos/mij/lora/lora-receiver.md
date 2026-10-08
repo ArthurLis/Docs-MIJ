@@ -6,34 +6,42 @@
 
 ## Objetivo
 
-Recebe pacotes LoRa por polling.
-
-<!-- Expandir o objetivo do exemplo. -->
+Recebe pacotes LoRa de forma simples.
 
 ## Funcionamento
 
-<!-- Explicar o fluxo principal. -->
+O firmware consulta a recepção em ciclos de polling. Se um pacote válido chegar, ele registra conteúdo, RSSI e SNR. Timeouts são normais enquanto não existe transmissão.
 
 ## Hardware
 
-<!-- Inserir pinagem e ligação. -->
+A ligação padrão usada nestes exemplos é:
+
+| Sinal | GPIO |
+| --- | ---: |
+| SCLK | 18 |
+| MISO | 19 |
+| MOSI | 23 |
+| NSS / CS | 5 |
+| RST | 14 |
+| DIO0 | 26 |
+| DIO1 | 13 |
+
+O DIO2 não é utilizado.
 
 ## Configuração
 
 Arquivo principal: `main/config.h`.
 
-<!-- Destacar apenas os parâmetros relevantes deste exemplo. -->
+Ajuste frequência, bandwidth, spreading factor, coding rate, sync word e potência conforme o teste. Esse mesmo arquivo também contém a pinagem. O componente SX1276 reutiliza essa configuração.
 
 ## Como testar
 
-<!-- Passo a passo do teste. -->
+Grave `LoRaSender` em outro dispositivo e mantenha os dois rádios com a mesma configuração.
 
 ## Resultado esperado
 
-<!-- Inserir logs, prints ou comportamento esperado. -->
+Cada pacote recebido deve aparecer no monitor com os dados e informações de sinal.
 
 ## Observações
 
-
-
-<!-- Espaço livre para anotações adicionais. -->
+Sender e Receiver precisam utilizar os mesmos parâmetros de modulação.
