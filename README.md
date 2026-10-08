@@ -192,5 +192,5 @@ A lista de documentos, bibliotecas e materiais utilizados fica em [Referências]
 
 ## Contatos
 
-Os canais de contato e informações institucionais podem ser adicionados em [Contatos](docs/contatos.md).
+Os canais de contato em [Contatos](docs/contatos.md).
 
