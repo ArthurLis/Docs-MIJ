@@ -10,34 +10,59 @@ Exemplos e documentação para as plataformas **MIJ** e **MIJ_X**, com comunica�
 
 ---
 
+## Comparação entre SX1276 e SX1262
+
+A tabela abaixo compara **apenas os rádios Semtech**, independentemente das placas MIJ ou MIJ_X.
+
+| Característica | SX1276 | SX1262 |
+| --- | --- | --- |
+| Geração LoRa IP | 1ª geração | 2ª geração |
+| Faixa de frequência | 137 a 1020 MHz | 150 a 960 MHz |
+| Potência máxima de TX | +20 dBm | +22 dBm |
+| Link budget máximo | 168 dB | 170 dB |
+| Corrente em recepção | ~11 mA | ~4,6 mA |
+| Spreading Factor LoRa | SF6 a SF12 | SF5 a SF12 |
+| Taxa LoRa máxima | até 40 kbps | até 62,5 kbps |
+| Sensibilidade máxima | até -148 dBm | até -148 dBm |
+
+Em resumo, o **SX1262** é uma geração mais nova, com menor consumo em recepção, maior potência de transmissão, suporte a SF5 e LR-FHSS. O **SX1276**, por outro lado, possui uma faixa de frequência total mais ampla e suporte a OOK.
+
+> Valores baseados na documentação oficial da Semtech.
+
+---
+
 ## Sobre o repositório
 
 Este repositório reúne os exemplos desenvolvidos para testes e estudo de comunicação LoRa e LoRaWAN nas plataformas JVTECH.
 
+> [!IMPORTANT]
+> As credenciais LoRaWAN deste repositório são placeholders zerados. Nunca publique chaves reais.
 
 ## Sumário
 
 - [JVTECH — LoRa e LoRaWAN com ESP-IDF](#jvtech--lora-e-lorawan-com-esp-idf)
+  - [Comparação entre SX1276 e SX1262](#comparação-entre-sx1276-e-sx1262)
   - [Sobre o repositório](#sobre-o-repositório)
   - [Sumário](#sumário)
   - [Plataformas](#plataformas)
-- [Documentação](#documentação)
-  - [Informações gerais](#informações-gerais)
-  - [Hardware](#hardware)
-  - [Primeiros passos](#primeiros-passos)
-  - [Material de apoio](#material-de-apoio)
-- [Exemplos](#exemplos)
-  - [MIJ — ESP32 + SX1276](#mij--esp32--sx1276)
-    - [LoRa](#lora)
-    - [LoRaWAN](#lorawan)
-  - [MIJ\_X — ESP32-C6 + SX1262](#mij_x--esp32-c6--sx1262)
-    - [LoRa](#lora-1)
-    - [LoRaWAN](#lorawan-1)
-- [Como começar](#como-começar)
+  - [Documentação](#documentação)
+    - [Informações gerais](#informações-gerais)
+    - [Hardware](#hardware)
+    - [Primeiros passos](#primeiros-passos)
+    - [Material de apoio](#material-de-apoio)
+  - [Exemplos](#exemplos)
+    - [MIJ — ESP32 + SX1276](#mij--esp32--sx1276)
+      - [LoRa](#lora)
+      - [LoRaWAN](#lorawan)
+    - [MIJ\_X — ESP32-C6 + SX1262](#mij_x--esp32-c6--sx1262)
+      - [LoRa](#lora-1)
+      - [LoRaWAN](#lorawan-1)
+  - [Como começar](#como-começar)
     - [MIJ](#mij)
     - [MIJ\_X](#mij_x)
-- [Referências](#referências)
-- [Contatos](#contatos)
+  - [Referências](#referências)
+  - [Contatos](#contatos)
+
 ---
 
 ## Plataformas
@@ -47,32 +72,30 @@ Este repositório reúne os exemplos desenvolvidos para testes e estudo de comun
 | **MIJ** | ESP32 | SX1276 | [Abrir projetos](examples/MIJ/) | [Ver documentação](docs/hardware/mij.md) |
 | **MIJ_X** | ESP32-C6 | SX1262 | [Abrir projetos](examples/MIJ_X/) | [Ver documentação](docs/hardware/mij-x.md) |
 
-<!-- Adicionar fotos das placas, versões de hardware ou outras observações. -->
-
 ---
 
-# Documentação
+## Documentação
 
-## Informações gerais
+### Informações gerais
 
 - [Características gerais](docs/caracteristicas-gerais.md)
 - [Ambiente de desenvolvimento](docs/ambiente-de-desenvolvimento.md)
 - [Visão geral dos projetos](docs/projetos/README.md)
 
-## Hardware
+### Hardware
 
 - [Visão geral de hardware](docs/hardware/README.md)
 - [MIJ — ESP32 + SX1276](docs/hardware/mij.md)
 - [MIJ_X — ESP32-C6 + SX1262](docs/hardware/mij-x.md)
 
-## Primeiros passos
+### Primeiros passos
 
 - [Primeiros passos](docs/primeiros-passos/README.md)
 - [Compilação e gravação](docs/primeiros-passos/compilacao-e-gravacao.md)
 - [Configuração LoRa](docs/primeiros-passos/configuracao-lora.md)
 - [Configuração LoRaWAN](docs/primeiros-passos/configuracao-lorawan.md)
 
-## Material de apoio
+### Material de apoio
 
 - [Material de apoio](docs/material-de-apoio/README.md)
 - [LoRa x LoRaWAN](docs/material-de-apoio/lora-vs-lorawan.md)
@@ -81,15 +104,15 @@ Este repositório reúne os exemplos desenvolvidos para testes e estudo de comun
 
 ---
 
-# Exemplos
+## Exemplos
 
 Os exemplos estão separados por **plataforma** e por **tipo de comunicação**. Cada projeto é independente e pode ser aberto e compilado separadamente.
 
-## MIJ — ESP32 + SX1276
+### MIJ — ESP32 + SX1276
 
 [Visão geral da MIJ](docs/projetos/mij/README.md)
 
-### LoRa
+#### LoRa
 
 | Exemplo | Código | Documentação |
 | --- | --- | --- |
@@ -98,7 +121,7 @@ Os exemplos estão separados por **plataforma** e por **tipo de comunicação**.
 | **LoRaReceiverCallback** | [Abrir](examples/MIJ/LoRa/LoRaReceiverCallback/) | [Ler](docs/projetos/mij/lora/lora-receiver-callback.md) |
 | **LoRaSenderNonBlockingCallback** | [Abrir](examples/MIJ/LoRa/LoRaSenderNonBlockingCallback/) | [Ler](docs/projetos/mij/lora/lora-sender-nonblocking-callback.md) |
 
-### LoRaWAN
+#### LoRaWAN
 
 | Exemplo | Código | Documentação |
 | --- | --- | --- |
@@ -109,11 +132,11 @@ Os exemplos estão separados por **plataforma** e por **tipo de comunicação**.
 
 ---
 
-## MIJ_X — ESP32-C6 + SX1262
+### MIJ_X — ESP32-C6 + SX1262
 
 [Visão geral da MIJ_X](docs/projetos/mij-x/README.md)
 
-### LoRa
+#### LoRa
 
 | Exemplo | Código | Documentação |
 | --- | --- | --- |
@@ -122,7 +145,7 @@ Os exemplos estão separados por **plataforma** e por **tipo de comunicação**.
 | **LoRaReceiverCallback** | [Abrir](examples/MIJ_X/LoRa/LoRaReceiverCallback/) | [Ler](docs/projetos/mij-x/lora/lora-receiver-callback.md) |
 | **LoRaSenderNonBlockingCallback** | [Abrir](examples/MIJ_X/LoRa/LoRaSenderNonBlockingCallback/) | [Ler](docs/projetos/mij-x/lora/lora-sender-nonblocking-callback.md) |
 
-### LoRaWAN
+#### LoRaWAN
 
 | Exemplo | Código | Documentação |
 | --- | --- | --- |
@@ -133,7 +156,7 @@ Os exemplos estão separados por **plataforma** e por **tipo de comunicação**.
 
 ---
 
-# Como começar
+## Como começar
 
 1. Escolha a plataforma: **MIJ** ou **MIJ_X**.
 2. Escolha um exemplo dentro de `LoRa/` ou `LoRaWAN/`.
@@ -161,14 +184,13 @@ Para mais detalhes, consulte [Compilação e gravação](docs/primeiros-passos/c
 
 ---
 
-# Referências
+## Referências
 
 A lista de documentos, bibliotecas e materiais utilizados fica em [Referências](docs/referencias.md).
 
 ---
 
-# Contatos
+## Contatos
 
 Os canais de contato e informações institucionais podem ser adicionados em [Contatos](docs/contatos.md).
 
-<!-- Espaço para informações adicionais da JVTECH. -->
