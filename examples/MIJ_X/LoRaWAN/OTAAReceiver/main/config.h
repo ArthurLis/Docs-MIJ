@@ -64,19 +64,6 @@ constexpr int8_t DEFAULT_TX_POWER_DBM = 17;
 constexpr uint16_t RADIO_PREAMBLE_LENGTH = 8;
 
 // -----------------------------------------------------------------------------
-// ABP credentials - copy/paste HEX strings.
-// LoRaWAN 1.0.x: DevAddr + NwkSKey + AppSKey.
-// -----------------------------------------------------------------------------
-constexpr char ABP_DEV_ADDR_HEX[] = "00000000";
-constexpr char ABP_NWK_S_KEY_HEX[] = "00000000000000000000000000000000";
-constexpr char ABP_APP_S_KEY_HEX[] = "00000000000000000000000000000000";
-
-// Optional ABP LoRaWAN 1.1. Leave ALL THREE empty for 1.0.x.
-constexpr char ABP_F_NWK_S_INT_KEY_HEX[] = "";
-constexpr char ABP_S_NWK_S_INT_KEY_HEX[] = "";
-constexpr char ABP_NWK_S_ENC_KEY_HEX[] = "";
-
-// -----------------------------------------------------------------------------
 // OTAA credentials - copy/paste HEX strings.
 // NwkKey empty = LoRaWAN 1.0.x; populated = LoRaWAN 1.1.
 // -----------------------------------------------------------------------------

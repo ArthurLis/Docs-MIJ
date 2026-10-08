@@ -76,14 +76,7 @@ constexpr char ABP_F_NWK_S_INT_KEY_HEX[] = "";
 constexpr char ABP_S_NWK_S_INT_KEY_HEX[] = "";
 constexpr char ABP_NWK_S_ENC_KEY_HEX[] = "";
 
-// -----------------------------------------------------------------------------
-// OTAA credentials - copy/paste HEX strings.
-// NwkKey empty = LoRaWAN 1.0.x; populated = LoRaWAN 1.1.
-// -----------------------------------------------------------------------------
-constexpr char OTAA_JOIN_EUI_HEX[] = "0000000000000000";
-constexpr char OTAA_DEV_EUI_HEX[]  = "0000000000000000";
-constexpr char OTAA_APP_KEY_HEX[]  = "00000000000000000000000000000000";
-constexpr char OTAA_NWK_KEY_HEX[]  = "";
+
 
 // Example behavior.
 constexpr uint8_t UPLINK_FPORT = 10;

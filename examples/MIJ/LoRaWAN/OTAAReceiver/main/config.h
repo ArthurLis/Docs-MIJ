@@ -9,11 +9,6 @@
  * JVTECH - OTAAReceiver
  * Target: ESP32 + SX1276
  * ESP-IDF: 5.3.1
- * LoRaWAN: Class A
- *
- * Credentials are HEX strings on purpose: copy from the network server and
- * paste between quotes. Spaces, ':', '-', '_', commas/braces and optional 0x are accepted.
- * Never print or commit real production keys.
  */
 
 #define DBG_MAIN
@@ -61,8 +56,7 @@ constexpr uint16_t RADIO_PREAMBLE_LENGTH = 8;
 // -----------------------------------------------------------------------------
 // OTAA credentials.
 // COPY -> PASTE. Do NOT convert to {0x.., 0x..}.
-// JoinEUI (old AppEUI) may legitimately be all zeros on some networks.
-// Leave NwkKey empty for LoRaWAN 1.0.x; paste it for LoRaWAN 1.1.
+// JoinEUI (AppEUI) may legitimately be all zeros on some networks.
 // -----------------------------------------------------------------------------
 constexpr char OTAA_JOIN_EUI_HEX[] = "2413984507c63288";
 constexpr char OTAA_DEV_EUI_HEX[] = "c92874ba3b476042";

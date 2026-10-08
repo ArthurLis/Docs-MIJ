@@ -42,7 +42,7 @@ constexpr int LORA_PIN_DIO1 = 0;   // example only - IRQ
 constexpr int LORA_PIN_BUSY = 2;   // example only
 constexpr uint32_t LORA_SPI_CLOCK_HZ = 8'000'000;
 
-constexpr float SX1262_TCXO_VOLTAGE = 1.6F; // set 0.0F for XTAL modules
+constexpr float SX1262_TCXO_VOLTAGE = 1.6F;
 constexpr bool SX1262_USE_REGULATOR_LDO = false;
 constexpr bool SX1262_USE_DIO2_RF_SWITCH = true;
 
@@ -76,15 +76,6 @@ constexpr char ABP_APP_S_KEY_HEX[] = "d3684d497669745db5f00dd19f751275";
 constexpr char ABP_F_NWK_S_INT_KEY_HEX[] = "";
 constexpr char ABP_S_NWK_S_INT_KEY_HEX[] = "";
 constexpr char ABP_NWK_S_ENC_KEY_HEX[] = "";
-
-// -----------------------------------------------------------------------------
-// OTAA credentials - copy/paste HEX strings.
-// NwkKey empty = LoRaWAN 1.0.x; populated = LoRaWAN 1.1.
-// -----------------------------------------------------------------------------
-constexpr char OTAA_JOIN_EUI_HEX[] = "0000000000000000";
-constexpr char OTAA_DEV_EUI_HEX[]  = "0000000000000000";
-constexpr char OTAA_APP_KEY_HEX[]  = "00000000000000000000000000000000";
-constexpr char OTAA_NWK_KEY_HEX[]  = "";
 
 // Example behavior.
 constexpr uint8_t UPLINK_FPORT = 10;

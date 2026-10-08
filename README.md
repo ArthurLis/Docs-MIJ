@@ -14,10 +14,6 @@ Exemplos e documentação para as plataformas **MIJ** e **MIJ_X**, com comunica�
 
 Este repositório reúne os exemplos desenvolvidos para testes e estudo de comunicação LoRa e LoRaWAN nas plataformas JVTECH.
 
-A documentação foi organizada para ser consultada diretamente pelo **GitHub**, utilizando arquivos Markdown e links internos entre as páginas.
-
-<!-- Espaço para ampliar a apresentação do projeto. -->
-
 ## Sumário
 
 - [JVTECH — LoRa e LoRaWAN com ESP-IDF](#jvtech--lora-e-lorawan-com-esp-idf)
@@ -43,7 +39,6 @@ A documentação foi organizada para ser consultada diretamente pelo **GitHub**,
 - [Perguntas e respostas](#perguntas-e-respostas)
 - [Referências](#referências)
 - [Contatos](#contatos)
-
 ---
 
 ## Plataformas
@@ -52,8 +47,6 @@ A documentação foi organizada para ser consultada diretamente pelo **GitHub**,
 | --- | --- | --- | --- | --- |
 | **MIJ** | ESP32 | SX1276 | [Abrir projetos](examples/MIJ/) | [Ver documentação](docs/hardware/mij.md) |
 | **MIJ_X** | ESP32-C6 | SX1262 | [Abrir projetos](examples/MIJ_X/) | [Ver documentação](docs/hardware/mij-x.md) |
-
-<!-- Adicionar fotos das placas, versões de hardware ou outras observações. -->
 
 ---
 
@@ -201,9 +194,6 @@ LoRa_IDF/
 │   ├── projetos/
 │   └── material-de-apoio/
 └── assets/
-```
-
-<!-- Adicionar novas seções ao repositório mantendo esta organização. -->
 
 ---
 

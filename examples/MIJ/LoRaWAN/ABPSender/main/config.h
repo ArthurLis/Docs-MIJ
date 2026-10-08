@@ -9,11 +9,6 @@
  * JVTECH - ABPSender
  * Target: ESP32 + SX1276
  * ESP-IDF: 5.3.1
- * LoRaWAN: Class A
- *
- * Credentials are HEX strings on purpose: copy from the network server and
- * paste between quotes. Spaces, ':', '-', '_', commas/braces and optional 0x are accepted.
- * Never print or commit real production keys.
  */
 
 #define DBG_MAIN
