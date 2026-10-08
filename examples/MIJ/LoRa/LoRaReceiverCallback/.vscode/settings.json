@@ -1,0 +1,5 @@
+{
+    "idf.currentSetup": "C:\\Users\\joao_\\esp\\v5.3.1\\esp-idf",
+    "idf.port": "COM25",
+    "idf.flashType": "UART"
+}

@@ -2,7 +2,7 @@
 
 > **Plataforma:** MIJ — ESP32 + SX1276  
 > **Modo:** LoRa  
-> **Projeto:** `MIJ/LoRa/LoRaSender`
+> **Projeto:** `examples/MIJ/LoRa/LoRaSender`
 
 ## Objetivo
 

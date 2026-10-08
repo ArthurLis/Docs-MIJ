@@ -1,0 +1,4 @@
+# JVTECH ESP32-C6 examples
+# 1 kHz tick gives accurate RadioLib timing, especially LoRaWAN RX windows.
+CONFIG_FREERTOS_HZ=1000
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192

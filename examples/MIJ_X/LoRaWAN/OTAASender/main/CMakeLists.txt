@@ -1,0 +1,11 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "lorawan_common.cpp"
+        "lorawan_credentials.cpp"
+        "lorawan_storage.cpp"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        nvs_flash
+)

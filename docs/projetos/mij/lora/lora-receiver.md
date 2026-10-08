@@ -2,7 +2,7 @@
 
 > **Plataforma:** MIJ — ESP32 + SX1276  
 > **Modo:** LoRa  
-> **Projeto:** `MIJ/LoRa/LoRaReceiver`
+> **Projeto:** `examples/MIJ/LoRa/LoRaReceiver`
 
 ## Objetivo
 

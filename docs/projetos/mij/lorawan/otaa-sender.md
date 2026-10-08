@@ -2,7 +2,7 @@
 
 > **Plataforma:** MIJ — ESP32 + SX1276  
 > **Modo:** LoRaWAN Class A / OTAA  
-> **Projeto:** `MIJ/LoRaWAN/OTAASender`
+> **Projeto:** `examples/MIJ/LoRaWAN/OTAASender`
 
 ## Objetivo
 

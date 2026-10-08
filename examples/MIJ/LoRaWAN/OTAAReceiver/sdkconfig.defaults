@@ -1,0 +1,10 @@
+# JVTECH LoRaWAN example - ESP-IDF 5.3.1
+# RadioLib native ESP-IDF HAL needs 1 ms FreeRTOS timing for LoRaWAN RX windows.
+CONFIG_FREERTOS_HZ=1000
+
+# LoRaWAN/RadioLib has deep call paths and sizeable protocol objects.
+# The ESP-IDF default main task stack is 3584 bytes; use a safer margin.
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+
+# Target hardware used by this test project has 4 MB flash.
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y

@@ -2,7 +2,7 @@
 
 > **Plataforma:** MIJ_X — ESP32-C6 + SX1262  
 > **Modo:** LoRaWAN Class A / ABP  
-> **Projeto:** `MIJ_X/LoRaWAN/ABPSender`
+> **Projeto:** `examples/MIJ_X/LoRaWAN/ABPSender`
 
 ## Objetivo
 
