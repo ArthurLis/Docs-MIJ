@@ -2,8 +2,4 @@
 
 ## Documentação
 
-<!-- Inserir links oficiais do ESP-IDF, RadioLib, Semtech e LoRa Alliance. -->
-
-## Repositórios
-
-<!-- Inserir links dos códigos e projetos relacionados. -->
+RadioLib: https://components.espressif.com/components/jgromes/radiolib/versions/7.0.2/examples/NonArduino/ESP-IDF?language=
