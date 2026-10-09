@@ -196,5 +196,4 @@ A lista de documentos, bibliotecas e materiais utilizados fica em [Referências]
 - **WhatsApp:** [(41) 99269-6439](https://wa.me/5541992696439)
 - **E-mail:** [contato@jvtech.net.br](mailto:contato@jvtech.net.br)
 
-Mais informações em [Contatos](docs/contatos.md).
 
