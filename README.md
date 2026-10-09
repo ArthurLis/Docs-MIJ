@@ -67,10 +67,10 @@ Este repositório reúne os exemplos desenvolvidos para testes e estudo de comun
 
 ## Plataformas
 
-| Plataforma | MCU | Rádio | Código | Hardware |
-| --- | --- | --- | --- | --- |
-| **MIJ** | ESP32 | SX1276 | [Abrir projetos](examples/MIJ/) | [Ver documentação](docs/hardware/mij.md) |
-| **MIJ_X** | ESP32-C6 | SX1262 | [Abrir projetos](examples/MIJ_X/) | [Ver documentação](docs/hardware/mij-x.md) |
+| Plataforma | MCU | Rádio | Homologação | Código | Hardware |
+| --- | --- | --- | --- | --- | --- |
+| **MIJ** | ESP32 | SX1276 | Certificado Nº 24305-23-16470 | [Abrir projetos](examples/MIJ/) | [Ver documentação](docs/hardware/mij.md) |
+| **MIJ_X** | ESP32-C6 | SX1262 | Certificado Nº 08444-25-16470 | [Abrir projetos](examples/MIJ_X/) | [Ver documentação](docs/hardware/mij-x.md) |
 
 ---
 
@@ -192,5 +192,9 @@ A lista de documentos, bibliotecas e materiais utilizados fica em [Referências]
 
 ## Contatos
 
-Os canais de contato em [Contatos](docs/contatos.md).
+- **Telefone:** (41) 99269-6439
+- **WhatsApp:** [(41) 99269-6439](https://wa.me/5541992696439)
+- **E-mail:** [contato@jvtech.net.br](mailto:contato@jvtech.net.br)
+
+Mais informações em [Contatos](docs/contatos.md).
 

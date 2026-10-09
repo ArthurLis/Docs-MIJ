@@ -4,6 +4,10 @@
 
 A MIJ_X utiliza um **ESP32-C6** com rádio **SX1262**.
 
+## Homologação
+
+**Certificado Nº 08444-25-16470**
+
 ## Pinagem
 
 Os exemplos deixam os GPIOs como valores genéricos. Antes de compilar, ajuste em `main/config.h` os sinais abaixo para a placa utilizada:

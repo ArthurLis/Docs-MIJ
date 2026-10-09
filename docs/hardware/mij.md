@@ -4,6 +4,10 @@
 
 A MIJ utiliza um **ESP32** conectado ao rádio **SX1276** por SPI.
 
+## Homologação
+
+**Certificado Nº 24305-23-16470**
+
 ## Pinagem usada pelos exemplos
 
 | Sinal | GPIO |
